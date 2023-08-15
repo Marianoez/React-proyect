@@ -1,0 +1,11 @@
+#LogoContainer {
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+    padding: 1%;
+    margin: 0%;
+}
+
+#LogoMain {
+    text-align: center;
+    width: 15%;
+}
