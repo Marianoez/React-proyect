@@ -11,22 +11,20 @@ const NavBar = () => {
   return (
     <>
       <nav className="containermain">
-        <li>
-          <a href="" className="linkmain">
-            MS
-          </a>
+        <li className="linkmain">
+          <a href="">MS</a>
         </li>
-        <li>
+        <li className="links">
           <a href="" className="links">
             Productos
           </a>
         </li>
-        <li>
+        <li className="links">
           <a href="" className="links">
             Contacto
           </a>
         </li>
-        <li>
+        <li className="links">
           <a href="" className="links">
             <CartWidget />
           </a>
