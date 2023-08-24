@@ -3,6 +3,8 @@
     background-color: rgb(207, 207, 207);
     justify-content: space-around;
     border-top: 4px solid rgb(111, 111, 111);
+    position: sticky;
+    top: 0;
 }
 
 #containerId {

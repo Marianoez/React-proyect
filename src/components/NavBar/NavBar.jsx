@@ -17,13 +17,13 @@ const NavBar = () => {
               M&S
             </Nav.Link>
             <Nav.Link id="Nav2" className="NavSecundary" href="#">
-              Nosotros
-            </Nav.Link>
-            <Nav.Link id="Nav3" className="NavSecundary" href="#">
               Productos
             </Nav.Link>
+            <Nav.Link id="Nav3" className="NavSecundary" href="#">
+              Contacto
+            </Nav.Link>
             <Nav.Link id="Nav4" className="NavSecundary" href="#">
-              <CartWidget />
+              <CartWidget className="cartwidget" />
             </Nav.Link>
           </Nav>
         </Container>
