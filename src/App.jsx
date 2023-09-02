@@ -4,16 +4,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ButtonComponent from "./components/ButtonComponent/ButtonComponent";
 import NavBar from "./components/NavBar/NavBar";
 import LogoHeader from "./components/LogoHeader/LogoHeader";
-/* import ItemListContainer from "./components/ItemListContainer/ItemListContainer"; */
-import Item from "./components/Item/Item";
 import { Axios } from "axios";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 const App = () => {
   return (
     <div>
       <LogoHeader />
       <NavBar />
-      <Item />
+      <ItemListContainer />
     </div>
   );
 };

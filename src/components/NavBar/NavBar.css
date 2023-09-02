@@ -11,6 +11,7 @@ li {
     display: flex;
     color: rgb(111, 111, 111);
     position: sticky;
+    z-index: 1;
     top: 0px;
     align-items: center;
 }
