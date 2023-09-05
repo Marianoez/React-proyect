@@ -16,7 +16,7 @@ li {
     align-items: center;
 }
 
-.linkmain {
+#LinkMain {
     color: inherit;
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -37,7 +37,14 @@ li {
     color: rgb(207, 207, 207);
 }
 
-.linkmain>a:hover {
+
+/* .linkmain>a:hover {
+    background-color: rgb(111, 111, 111);
+    border-radius: 50%;
+    color: rgb(207, 207, 207);
+} */
+
+#LinkMain:hover {
     background-color: rgb(111, 111, 111);
     border-radius: 50%;
     color: rgb(207, 207, 207);
