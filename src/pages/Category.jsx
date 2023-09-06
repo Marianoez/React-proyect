@@ -5,7 +5,7 @@ import axios from "axios";
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
 import LoaderComponent from "../components/LoaderComponent/LoaderComponent";
 
-function getItems() {
+export function getItems() {
   return axios.get("https://dummyjson.com/products?limit=10");
 }
 
