@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import "./ItemUn.css";
@@ -32,6 +32,40 @@ const ItemUn = () => {
       </Card>
     );
   });
+};
+
+export default ItemUn; */
+
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+
+const ItemUn = ({ productsData }) => {
+  //useNavigate nos permite navegar entre rutas dentro de nuestra aplicación
+  const navigate = useNavigate();
+
+  return (
+    <div className="productContainer">
+      {productsData.map((product) => {
+        return (
+          <Card style={{ width: "18rem" }} key={product.id}>
+            <Card.Img variant="top" src={product.images[1]} />
+            <Card.Body>
+              <Card.Title>{product.title}</Card.Title>
+              <Card.Text>{product.description}</Card.Text>
+              <Button variant="secondary" onClick={console.log("sss")}>
+                Agregar al Carrito
+              </Button>
+              <Button style={{ margin: "10px" }} variant="secondary">
+                Volver atras
+              </Button>
+            </Card.Body>
+          </Card>
+        );
+      })}
+    </div>
+  );
 };
 
 export default ItemUn;

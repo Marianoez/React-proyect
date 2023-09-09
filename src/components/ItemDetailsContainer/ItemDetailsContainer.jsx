@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import axios from "axios";
+import "./ItemDetailsContainer.css";
 
 const ItemDetailContainer = ({ productData }) => {
   return (

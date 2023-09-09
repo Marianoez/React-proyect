@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import Category from "../pages/Category";
 import ItemDetails from "../pages/ItemDetails";
 import Contacto from "../pages/Contacto";
+import CategoryBrand from "../pages/CategoryBrand";
 
 const MainRouter = () => {
   return (
@@ -15,6 +16,7 @@ const MainRouter = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category/:categoryId" element={<Category />} />
+        <Route path="/brand/:categoryBid" element={<CategoryBrand />} />
         <Route path="/item/:itemId" element={<ItemDetails />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>

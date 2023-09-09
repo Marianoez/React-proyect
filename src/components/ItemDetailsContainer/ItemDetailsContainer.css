@@ -1,0 +1,12 @@
+* {
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardcontainer {
+    display: flex;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+}

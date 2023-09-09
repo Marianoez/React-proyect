@@ -32,7 +32,7 @@ const NavBar = () => {
                   <Link to="category/smartphones">Smarphones</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item className="links" href="#action/3.3">
-                  <Link to="category/brand">Apple</Link>
+                  <Link to="brand/Apple">Apple</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item className="links" href="#action/3.4">

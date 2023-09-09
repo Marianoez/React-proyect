@@ -15,10 +15,12 @@ const Category = () => {
 
   const { categoryId } = useParams();
 
+  console.log(categoryId);
   useEffect(() => {
     getItems()
       .then((res) => {
-        console.log(res.data.products);
+        /* 
+        console.log(res.data.products); */
         const dataFiltered = res.data.products.filter(
           (item) => item.category === categoryId
         );
