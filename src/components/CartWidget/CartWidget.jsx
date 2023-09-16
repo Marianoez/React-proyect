@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import "./CartWidget.css";
+//import { CartContext } from "../../context/CartContext";
 
 const CartWidget = () => {
+  //const value = useContext(CartContext);
   const contador = 0;
   return (
     <>
