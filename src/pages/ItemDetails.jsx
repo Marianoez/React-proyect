@@ -1,22 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 import ItemDetailContainer from "../components/ItemDetailsContainer/ItemDetailsContainer";
-
-function getProductById(id) {
-  return axios.get(`https://dummyjson.com/products/${id}`);
-}
 
 const ItemDetails = () => {
   const [product, setProduct] = useState({});
   const { itemId } = useParams();
 
   useEffect(() => {
-    getProductById(itemId)
-      .then((res) => {
-        setProduct(res.data);
-      })
-      .catch((err) => {});
+    const db = getFirestore();
+    const productItem = doc(db, "Productos", itemId);
+
+    getDoc.apply(productItem).then((snapshot) => {
+      setProduct({ id: snapshot.id, ...snapshot.data() });
+    });
   }, [itemId]);
 
   return <ItemDetailContainer productData={product} />;

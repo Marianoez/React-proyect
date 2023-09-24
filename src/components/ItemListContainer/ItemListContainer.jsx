@@ -13,10 +13,10 @@ const ItemListContainer = ({ productsData }) => {
       {productsData.map((product) => {
         return (
           <Card style={{ width: "18rem" }} key={product.id}>
-            <Card.Img variant="top" src={product.images[1]} />
+            <Card.Img variant="top" src={product.img} />
             <Card.Body>
-              <Card.Title>{product.title}</Card.Title>
-              <Card.Text>{product.description}</Card.Text>
+              <Card.Title>{product.nombre}</Card.Title>
+              <Card.Text>{product.descripcion}</Card.Text>
               <Button
                 variant="secondary"
                 onClick={() => navigate(`/item/${product.id}`)}
