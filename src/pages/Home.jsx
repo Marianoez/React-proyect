@@ -1,30 +1,24 @@
 import React, { useEffect, useState } from "react";
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
-import axios from "axios";
 import LoaderComponent from "../components/LoaderComponent/LoaderComponent";
+<<<<<<< HEAD
 import Category from "./Category";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 function getItems() {
   return axios.get("https://dummyjson.com/products");
 }
+=======
+import { useCollection } from "../hooks/useCollection";
+>>>>>>> fixes
 
 const Home = () => {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    getItems()
-      .then((res) => {
-        setProducts(res.data.products);
-      })
-      .catch((err) => {})
-      .finally(() => setLoading(false));
-  }, []);
+  const { data, loading } = useCollection("Productos");
 
   return loading ? (
-    <LoaderComponent />
+    <LoaderComponent display="flex" justifyContent="center" />
   ) : (
-    <ItemListContainer productsData={products} />
+    <ItemListContainer productsData={data} />
   );
 };
 

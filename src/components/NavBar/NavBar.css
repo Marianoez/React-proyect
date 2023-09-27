@@ -31,6 +31,12 @@ li {
     padding: 0.5vh 3vh;
 }
 
+#LinkMain:hover {
+    background-color: rgb(111, 111, 111);
+    border-radius: 50%;
+    color: rgb(207, 207, 207);
+}
+
 .links>a:hover {
     background-color: rgb(111, 111, 111);
     border-radius: 6%;
@@ -43,9 +49,3 @@ li {
     border-radius: 50%;
     color: rgb(207, 207, 207);
 } */
-
-#LinkMain:hover {
-    background-color: rgb(111, 111, 111);
-    border-radius: 50%;
-    color: rgb(207, 207, 207);
-}

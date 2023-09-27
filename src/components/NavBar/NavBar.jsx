@@ -26,17 +26,17 @@ const NavBar = () => {
                 id="basic-nav-dropdown"
               >
                 <NavDropdown.Item className="links">
-                  <Link to="category/laptops">Laptops</Link>
+                  <Link to="category/cueros">Cueros</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item className="links" href="#action/3.2">
-                  <Link to="category/smartphones">Smarphones</Link>
+                  <Link to="category/hierros">Herrajes</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item className="links" href="#action/3.3">
-                  <Link to="brand/Apple">Apple</Link>
+                  <Link to="category/herrajes">Frenos y Filetes</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item className="links" href="#action/3.4">
-                  <Link to="/">Ver Todos</Link>
+                  <Link to="category/ofertas">Ofertas</Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link className="links" href="#link">
