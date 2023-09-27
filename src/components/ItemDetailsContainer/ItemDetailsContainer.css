@@ -10,3 +10,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.Title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.Description {
+    text-align: center;
+}

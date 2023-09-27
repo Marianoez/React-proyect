@@ -2,23 +2,25 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-import axios from "axios";
 import "./ItemDetailsContainer.css";
 
 const ItemDetailContainer = ({ productData }) => {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={productData.thumbnail} />
+      <Card.Img variant="top" src={productData.img} />
       <Card.Body>
-        <Card.Title>{productData.title}</Card.Title>
-        <Card.Text>{productData.description}</Card.Text>
+        <Card.Title className="Title">{productData.nombre}</Card.Title>
+        <Card.Text className="Description">{productData.descripcion}</Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroup.Item>{productData.price}</ListGroup.Item>
-        <ListGroup.Item>{productData.rating}</ListGroup.Item>
+        <ListGroup.Item>Categoria: {productData.category}</ListGroup.Item>
+        <ListGroup.Item>Talle: {productData.size}</ListGroup.Item>
+        <ListGroup.Item>Stock: {productData.stock}</ListGroup.Item>
+        <ListGroup.Item>Precio: ${productData.precio}</ListGroup.Item>
+        <ListGroup.Item>Descuento en un pago 10%</ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Button>Agregar el carrito</Button>
+        <Button variant="secondary">Agregar el carrito</Button>
       </Card.Body>
     </Card>
   );

@@ -8,17 +8,21 @@ import LoaderComponent from "../components/LoaderComponent/LoaderComponent";
 const Category = () => {
   const [productsFiltered, setProductsFiltered] = useState([]);
 
-  const { categoryName } = useParams();
-  console.log(categoryName);
+  const { categoryId } = useParams();
+  console.log(categoryId);
   const { data, loading } = useCollection("Productos");
 
   useEffect(() => {
     const productsFiltered = data.filter((product) => {
-      return product.category === categoryName;
+      return product.category === categoryId;
     });
     setProductsFiltered(productsFiltered);
-  }, [data, categoryName]);
-  return <ItemListContainer productsData={productsFiltered} />;
+  }, [data, categoryId]);
+  return loading ? (
+    <LoaderComponent />
+  ) : (
+    <ItemListContainer productsData={productsFiltered} />
+  );
 };
 
 export default Category;

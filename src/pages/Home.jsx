@@ -6,7 +6,11 @@ import { useCollection } from "../hooks/useCollection";
 const Home = () => {
   const { data, loading } = useCollection("Productos");
 
-  return <ItemListContainer productsData={data} />;
+  return loading ? (
+    <LoaderComponent display="flex" justifyContent="center" />
+  ) : (
+    <ItemListContainer productsData={data} />
+  );
 };
 
 export default Home;

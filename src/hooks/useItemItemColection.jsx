@@ -1,7 +1,8 @@
 import React from "react";
 import { getDoc, doc, getFirestore } from "firebase/firestore";
+import LoaderComponent from "../components/LoaderComponent/LoaderComponent";
 
-export const useItemDetail = (collectionName, itemId) => {
+export const useItemCollection = (collectionName, itemId) => {
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
