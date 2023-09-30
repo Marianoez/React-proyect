@@ -9,10 +9,6 @@ import { Modal } from "react-bootstrap";
 import { CartContext } from "../../context/CartContext";
 
 const CartWidget = () => {
-<<<<<<< HEAD
-  //const value = useContext(CartContext);
-  const contador = 0;
-=======
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
@@ -20,7 +16,6 @@ const CartWidget = () => {
 
   const { cartItems } = useContext(CartContext);
 
->>>>>>> router
   return (
     <div className onClick={handleShow}>
       <FontAwesomeIcon icon={faCartShopping} />
