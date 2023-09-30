@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import "./ItemDetailsContainer.css";
+import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetailContainer = ({ productData }) => {
   return (
@@ -20,7 +21,7 @@ const ItemDetailContainer = ({ productData }) => {
         <ListGroup.Item>Descuento en un pago 10%</ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Button variant="secondary">Agregar el carrito</Button>
+        <ItemCount />
       </Card.Body>
     </Card>
   );

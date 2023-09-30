@@ -20,3 +20,10 @@
 .Description {
     text-align: center;
 }
+
+.CardBody {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}

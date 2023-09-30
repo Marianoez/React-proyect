@@ -40,7 +40,7 @@ const NavBar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link className="links" href="#link">
-                <Link to="/contacto">Contacto</Link>
+                <a href="www.instagram.com">Nuestras Redes</a>
               </Nav.Link>
               <Nav.Link className="links" href="#link">
                 <CartWidget />
