@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./ItemListContainer.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { CartContext } from "../../context/CartContext";
+import ItemCount from "../ItemCount/ItemCount";
 
 const ItemListContainer = ({ productsData }) => {
   //useNavigate nos permite navegar entre rutas dentro de nuestra aplicación
@@ -14,7 +16,7 @@ const ItemListContainer = ({ productsData }) => {
         return (
           <Card style={{ width: "18rem" }} key={product.id}>
             <Card.Img variant="top" src={product.img} />
-            <Card.Body>
+            <Card.Body className="CardBody">
               <Card.Title>{product.nombre}</Card.Title>
               <Card.Text>{product.descripcion}</Card.Text>
               <Button
@@ -23,9 +25,9 @@ const ItemListContainer = ({ productsData }) => {
               >
                 Detalles
               </Button>
-              <Button style={{ margin: "10px" }} variant="secondary">
-                Agregar al carrito
-              </Button>
+              <div className="itemCart">
+                <ItemCount />
+              </div>
             </Card.Body>
           </Card>
         );
