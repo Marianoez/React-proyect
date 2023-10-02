@@ -22,17 +22,12 @@ const CartWidget = () => {
       <strong> {cartItems} </strong>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title className="modaltt">
+            Compra Realizada con éxito!
+          </Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+        <Modal.Body>Muchas gracias por confiar en nosotros!</Modal.Body>
+        <Modal.Footer></Modal.Footer>
       </Modal>
     </div>
   );
